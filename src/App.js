@@ -20,8 +20,8 @@ function App() {
       
       case '=': {
         const operation = eval(calc);
-        
         setCalc(operation);
+
         break;
       };
         
@@ -45,6 +45,8 @@ function App() {
           } else {
             display = `${calc} ${innerText} `;
           }
+        } else if (lastPressed === '=') {
+          display = innerText;
         } else {
           display = calc === "0" ? innerText : calc + innerText;
         }
@@ -113,7 +115,7 @@ function App() {
           <div className="button" id="decimal" onClick={handleClick}>
             .
           </div>
-          <button className="button" id="equals" onClick={handleClick}>
+          <button id="equals" onClick={handleClick}>
             =
           </button>
         </div>

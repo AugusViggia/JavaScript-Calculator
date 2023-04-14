@@ -39,7 +39,6 @@
   text-align: center;
   padding: 15px;
   font-size: 25px;
-  border-radius: 5px;
   border: 1px solid #ccc;
   background-color: #485460;
   color: #fff;
@@ -52,9 +51,15 @@
 }
 
 #equals{
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
   background-color: #f6b93b;
+  border: 1px solid #ccc;
+  width: 210%;
   color: #fff;
-  width: 170%;
+  cursor: pointer;
+  border-radius: 10%;
 }
 
 #add{
