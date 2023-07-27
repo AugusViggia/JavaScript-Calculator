@@ -61,16 +61,14 @@ function App() {
   return (
     <div className="App">
       <div className="calculator">
-        <div id="display">{calc}</div>
+        <div className='display'>{calc}</div>
         <div className="buttonsDiv">
-          <button className="button" id="clear" onClick={handleClick}>
+          <button className="buttonClear" onClick={handleClick}>
             AC
           </button>
-          <div className="button">
-          </div>
-          <div className="button">
-          </div>
-          <div className="button" id="divide" onClick={handleClick}>
+          <div className="button"></div>
+          <div className="button"></div>
+          <div className="buttonOperator" onClick={handleClick}>
             /
           </div>
           <div className="button" id="seven" onClick={handleClick}>
@@ -82,7 +80,7 @@ function App() {
           <div className="button" id="nine" onClick={handleClick}>
             9
           </div>
-          <div className="button" id="multiply" onClick={handleClick}>
+          <div className="buttonOperator" onClick={handleClick}>
             *
           </div>
           <div className="button" id="four" onClick={handleClick}>
@@ -94,7 +92,7 @@ function App() {
           <div className="button" id="six" onClick={handleClick}>
             6
           </div>
-          <div className="button" id="subtract" onClick={handleClick}>
+          <div className="buttonOperator" onClick={handleClick}>
             -
           </div>
           <div className="button" id="one" onClick={handleClick}>
@@ -106,7 +104,7 @@ function App() {
           <div className="button" id="three" onClick={handleClick}>
             3
           </div>
-          <div className="button" id="add" onClick={handleClick}>
+          <div className="buttonOperator" onClick={handleClick}>
             +
           </div>
           <div className="button" id="zero" onClick={handleClick}>
@@ -115,13 +113,13 @@ function App() {
           <div className="button" id="decimal" onClick={handleClick}>
             .
           </div>
-          <button id="equals" onClick={handleClick}>
+          <button className="buttonEqual" onClick={handleClick}>
             =
           </button>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default App;
