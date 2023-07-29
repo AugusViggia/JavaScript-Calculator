@@ -61,7 +61,7 @@ function App() {
   return (
     <div className="App">
       <div className="calculator">
-        <div className='display'>{calc}</div>
+            <div className="display">{calc}</div>
         <div className="buttonsDiv">
           <button className="buttonClear" onClick={handleClick}>
             AC
