@@ -11,13 +11,13 @@
 }
 
 .calculator{
-  min-width: 37vw;
-  min-height: 40vh;
+  min-width: 20vw;
+  min-height: fit-content;
 }
 
 .display{
   border-radius: 10px;
-  min-width: 37vw;
+  min-width: fit-content;
   min-height: fit-content;
   text-align: right;
   position: relative;
